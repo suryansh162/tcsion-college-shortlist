@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Quicksand&family=Roboto+Mono:ital,wght@1,100&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <title>CollegeDhundo||Discover Colleges & Courses for Higher Education in India</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../data/script.js"></script>
+    <script src="../js/College_model.js"></script>
+    
+</head>
+
+<body>
+    <div class="header">
+        <!-- <button class = "phone_menu" id="phone_menu_button" style="border: 0; background: transparent" onclick="openNav()">
+            <img src="resources/menu-outline.svg" width="90" height="50" alt="submit" />
+        </button> -->
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>
+            <div class="navbar_icon">
+                <div class="box_nav">
+                    <img class="start" src="../images/screen-1.jpg" alt="College_icon" style="width: 90px;">
+                    <h1 class="webname_nav">CollegeDhundo</h1>
+                </div>
+            </div>
+            <a href="findcolleges.html">Home</a>
+            <a href="findcolleges.html">Find Colleges</a>
+            <a href="#">Updates</a>
+            <a href="#">Login</a>
+        </div>
+        <div class="grid col-md-8">
+            <div class="box">
+                <button class="phone_menu" id="phone_menu_button" style="border: 0; background: transparent"
+                    onclick="openNav()">
+                    <img src="../images/menu-outline.jpg" width="90" height="50" alt="submit" />
+                </button>
+                <img class="start" src="../images/screen-1.jpg" alt="College_icon" style="width: 90px;">
+                <h1 class="webname">CollegeDhundo</h1>
+            </div>
+        </div>
+        <div class="navigation_bar col-md-4">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent ml-auto">
+                <!-- <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="findcolleges.html">Home</a>
+                        </li>
+                        <li class="nav-item active px-3">
+                            <a class="nav-link" href="findcolleges.html">Find Colleges <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Updates</a>
+                        </li>
+                        <li class="nav-item px-3">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="row" id="row1">
+        <div style="padding-top: 5vh;padding-bottom:5vh" id="card_form" class="col-12 col-md-4">
+            <div class="card">
+                <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                <div class="card-body">
+                    <h4 class="card_text" style="font-family: 'Baloo Bhai 2', cursive;">Search for the college that you desire</h4>
+                    <h6 class="card_subtext" style="font-family: 'Baloo Bhai 2', cursive;">Please Fill all the details and explore the colleges that fits you</h6>
+                    <form class="College_Search_Form">
+                        <div class="form-group">
+                            <label class="required" style="font-family: 'Baloo Bhai 2', cursive;">College Name</label>
+                            <select class="form-control" id="College_Name_Menu" required>
+                                <option value="" selected disabled>SELECT..</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="required" style="font-family: 'Baloo Bhai 2', cursive;">CATEGORY</label>
+                            <select class="form-control" id="CATEGORY_Menu">
+                                <option value="" selected disabled>SELECT..</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="required" style="font-family: 'Baloo Bhai 2', cursive;">Annual Family Income</label>
+                            <input type="number" class="form-control" id="Family_Income" required="true">
+                            <div class="requirements"></div>
+                            <!-- <img class="validation_check" src="resources/check.svg"> -->
+                        </div>
+                        <div class="form-group">
+                            <label class="required" style="font-family: 'Baloo Bhai 2', cursive;">12th Standard Percentage</label>
+                            <input type="number" min="0" max="100" class="form-control" id="12th_Standard_Percentage"
+                                required="true">
+                            <div class="requirements"></div>
+                        </div>
+                        <div class="submit">
+                            <button type="button" id="College_submit" onclick="Filter_College_Data()" disabled
+                                class="btn" style="font-family: 'Baloo Bhai 2', cursive;">Find</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8 instructions_part" id="result_section" >
+            <div class="instruction" id="instruction" style="background-color:#06ffc983;border-radius: 9px; font-family: 'Baloo Bhai 2', cursive;">
+                <h1 style="text-align: center">And How does it work?</h1>
+                <ol style="display: inline-block;color:white ; font-weight: bolder;">
+                    <li class="">
+                        Firstly Fill all the required details correctly as asked in the form and click on the find button.
+                    </li>
+                    <li class="">
+                        Once the list of colleges shows up, click on the college that suits you to
+                        grab more necessary details on it.
+                    </li>
+                    <li class="">
+                        Under each college card, all the necessary details regarding the application and financial data are available on it.
+                    </li>
+                    <li class="">
+                        Click on star button to add them your wishlist for easier access laterly.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <div class="Wishlist_Colleges">
+            <div class="container Wishlist_Content">
+                <!-- <img class="background_image" src="resources/college_graduation_mobile.jpg" alt="College_Graduation"> -->
+                <h1 class="intro_text_2">Wishlist Your Choices</h1>
+                <p style="text-align:center;color:grey;font-weight:bold;padding-bottom: 1vh;">Find the best colleges that you
+                    desire and wishlist them.</p>
+                <div class="row">
+                    <div class="col-12 col-md-4 find_sections" style="text-align:center">
+                        <img src="../images/search.png" style="zoom:0.4" alt="College_Graduation">
+                        <p style="text-align:center;color:grey;font-weight:bold;padding-bottom: 1vh;">Find out the best colleges </p>
+                    </div>
+                    <div class="col-12 col-md-4 wishlist_sections" style="text-align:center">
+                        <img src="../images/wishlist.png" style="zoom:0.4" alt="College_Graduation">
+                        <p style="text-align:center;color:grey;font-weight:bold;padding-bottom: 1vh;">Wishlist the colleges
+                            of your preference.</p>
+                    </div>
+                    <div class="col-12 col-md-4 apply_sections" style="text-align:center">
+                        <img src="../images/apply.png" alt="College_Graduation">
+                        <p style="text-align:center;color:grey;font-weight:bold;padding-bottom: 1vh;">Apply for the colleges and
+                            to pursue your dreams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="About_Us_Colleges">
+            <div class="About_Us_Content">
+                <!-- <img class="background_image" src="resources/college_graduation_mobile.jpg" alt="College_Graduation"> -->
+                <h1 class="intro_text_3" style="color: rgb(0, 255, 76);">About Us</h1>
+                <p style="text-align:center;color:white;font-weight:bold;margin:0;padding-bottom: 5vh;">We are a community creating and looking for improvement of college application processses.<br>Visit Us to find the perfect college to persue your carrier.</p>
+            </div>
+        </div>
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="d-none d-lg-block">
+                <span><b style="font-size: 25px;">Get Connected With Us : </b></span>
+            </div>
+            <div>
+                <a href="" class="text-reset">
+                    <i class="fab fa-twitter"></i>
+                    <img style="width:50px;height:50px;margin-right: 12px; text-decoration:none;" src="../images/twitter.png"
+                        alt="College_Graduation">
+                </a>
+                <a href="" class="text-reset">
+                    <i class="fab fa-instagram"></i>
+                    <img style="width:50px;height:50px;margin-right:10px; text-decoration:none;" src="../images/instagram.png"
+                        alt="College_Graduation">
+                </a>
+                <a href="" class="text-reset">
+                    <i class="fab fa-linkedin"></i>
+                    <img style="width:50px;height:50px;margin-right:10px; text-decoration:none;" src="../images/linkedin.png"
+                        alt="College_Graduation">
+                </a>
+                <a href="" class="text-reset">
+                    <i class="fab fa-github"></i>
+                    <img style="width:50px;height:50px;margin-right:10px; text-decoration:none;" src="../images/github.png" alt="College_Graduation">
+                </a>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto">
+                        <h6 class="text-uppercase fw-bold">
+                            <b style="font-size: 25px;"> College Dhundo </b>
+                        </h6>
+                        <p>
+                           College Shortlist Advice To Find Out the perfect college for you
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <b style="font-size: 25px;"> Contact Us</b>
+                        </h6>
+                        <p>
+                            username@mail.com
+                        </p>
+                        <p>+91 74**9**258</p>
+                    </div>
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright : 
+            <a class="text-reset_fw-bold" href="findcolleges.html" >CollegeDhundo.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    
+</body>
+
+</html>
