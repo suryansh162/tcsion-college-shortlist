@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Quicksand&family=Roboto+Mono:ital,wght@1,100&family=Tiro+Devanagari+Hindi&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="College_model.js"></script>
+    <title>CollegeDhundo||Discover Colleges & Courses for Higher Education in India</title>
+</head>
+<style>
+    hr{
+        margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid rgba(0,0,0,.1)
+    }
+    .card-header {
+        width: 95%;
+        background-color: rgb(27 235 177 / 44%);
+        padding: 0.75rem 3.25rem;
+
+    }
+
+    .Wishlist_Content {
+        opacity: 0;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        -moz-transition: all 1000ms linear;
+        -webkit-transition: all 1000ms linear;
+        -o-transition: all 1000ms linear;
+        transition: all 1000ms linear;
+        -moz-transform: translate3d(-100px, 0px, 0px);
+        -webkit-transform: translate3d(-100px, 0px, 0px);
+        -o-transform: translate(-100px, 0px);
+        -ms-transform: translate(-100px, 0px);
+        transform: translate3d(-100px, 0px, 0px);
+    }
+
+    .Wishlist_Content.in-view {
+        opacity: 1;
+        -moz-transform: translate3d(0px, 0px, 0px);
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        -o-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    .About_Us_Content {
+        opacity: 0;
+        background-image: url("../college_about.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .5);
+        -moz-transition: all 1000ms linear;
+        -webkit-transition: all 1000ms linear;
+        -o-transition: all 1000ms linear;
+        transition: all 1000ms linear;
+    }
+
+    .About_Us_Colleges {
+        padding-top: 1vh;
+    }
+
+    .About_Us_Content.in-view {
+        opacity: 1;
+    }
+
+    @keyframes changes {
+
+        0%,
+        100% {
+            background-image: url("../images/2.jpg");
+        }
+
+        25% {
+            background-image: url("../images/6.jpg");
+        }
+
+        50% {
+            background-image: url("../images/university.jpg");
+        }
+
+        75% {
+            background-image: url("../images/5.jpg");
+        }
+
+    }
+
+
+    @keyframes loadAnimation {
+        0% {
+            transform: translatex(-20%) translatey(-50%);
+        }
+
+        100% {
+            transform: translatex(-120%) translatey(-200%) scale(0.5);
+        }
+    }
+
+    @keyframes loadAnimationSmall {
+        0% {
+            transform: translatex(-5px) translatey(-5px);
+        }
+
+        100% {
+            transform: translatex(-5px) translatey(-5px);
+        }
+    }
+
+    @keyframes loadAnimation2 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 0.8;
+        }
+    }
+
+    @keyframes loadAnimation3 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .find_sections:hover,
+    .wishlist_sections:hover,
+    .apply_sections:hover {
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+    }
+
+
+
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .grid {
+        position: relative;
+        left: 7%;
+        zoom: 0.5;
+        float: left;
+    }
+
+    .box {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .header {
+        height: 100px;
+        padding-bottom: 2%;
+        background-color: white;
+        border: 2px solid white;
+    }
+
+    .navigation_bar {
+        position: relative;
+        padding-top: 2.2%;
+        width: 50%;
+        animation: loadAnimation2 2s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+        float: left;
+    }
+
+    .row {
+        padding-top: 1%;
+        width: 100%;
+    }
+
+    #row1 {
+        background-image: url(../images/bg1.jpg);
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        transform: translate(1%, 0%);
+        padding: 36px;
+        animation: changes 16s ease-in-out infinite;
+        padding: 63px;
+        background: round;
+
+    }
+
+    .card {
+        box-shadow: 1px 1px 4px grey;
+    }
+
+    .required:after {
+        content: " *";
+        color: red;
+    }
+
+    .requirements {
+        color: red;
+    }
+
+    .validation_check {
+        height: 20px;
+        position: absolute;
+        width: auto;
+        bottom: 40%;
+        right: 8%;
+    }
+
+    .svg {
+        fill: green;
+    }
+
+    .card_text {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+    }
+
+    .college_find_text {
+        text-align: center;
+        border-radius: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: lighter;
+        color: #da1f1f;
+        background-color: rgb(27, 25, 25)
+    }
+
+    .card_subtext {
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: bold;
+        color: grey;
+    }
+
+    .submit {
+        text-align: center;
+    }
+
+    #College_submit {
+        background-color: darkorange;
+        color: white;
+        font-weight: bolder;
+    }
+
+    #reset_data {
+        background-color: darkorange;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .instructions_part {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: round;
+        background-repeat: no-repeat;
+        transform: translate(0%, 0%);
+
+        animation: change 1s infinite;
+    }
+
+    .instruction {
+        margin: auto;
+        text-align: left;
+        font-weight: bolder;
+        color: white;
+    }
+
+    ol li {
+        padding-bottom: 1vh;
+        color: white;
+        font-weight: 100;
+    }
+
+    footer {
+        padding-top: 2%;
+        box-shadow: 1px 1px 4px grey;
+    }
+
+    #college_cards {
+        margin: 3%;
+        padding: 3%;
+    }
+
+
+    #output_display {
+        overflow: auto;
+        background-repeat: round;
+        scroll-behavior: smooth;
+        text-align: -webkit-center;
+
+    }
+
+    #output_display::-webkit-scrollbar {
+        height: 0px;
+    }
+
+    .information_icon {
+        height: 3vh;
+        width: auto;
+    }
+
+
+    @media screen and (max-width: 768px) {
+        .card-header {
+        width: 95%;
+        padding: 0.75rem 3.25rem;
+
+    }
+        .webname_nav {
+            zoom: 1.6;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        #card_form {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        a.text-reset_fw-bold:hover {
+            color: #0056b3;
+            text-decoration: none;
+            background-color: rgb(245, 169, 6);
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+
+        a.text-reset img:hover {
+            color: #0056b3;
+            text-decoration: none;
+            background-color: rgb(245, 169, 6);
+            border-radius: 10px;
+            padding: 10px;
+
+
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            text-align: center;
+            font-weight: bold;
+            zoom: 0.7;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 2px 2px 6px rgba(1, 1, 1, 0.4);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #0a0a0a;
+            transform: scale(1.3);
+            transition: 0.3s ease-in-out;
+            font-weight: bold
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .navbar_icon {
+            zoom: 0.4;
+            padding-left: 10%;
+            padding-top: 10%;
+        }
+
+        .phone_menu {
+            position: relative;
+            zoom: 1.8;
+            left: -7%;
+        }
+
+        .box {
+            zoom: 0.8;
+            padding-top: 3%;
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        .box_nav {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+        }
+
+        .webname_nav {
+            zoom: 1.6;
+        }
+
+        #college_cards {
+            text-align: center;
+        }
+
+        .college_find_text {
+            zoom: 0.5;
+        }
+
+
+    }
+
+
+    @media screen and (min-width: 768px) {
+
+
+        #card_form {
+            padding-left: 2vw;
+        }
+
+        #mySidebar,
+        #phone_menu_button {
+            display: none;
+        }
+
+        a.text-reset_fw-bold:hover {
+            color: black;
+            text-decoration: none;
+            background-color: rgb(245, 169, 6);
+            border-radius: 10px;
+            padding: 10px;
+
+        }
+
+        a.text-reset img:hover {
+            color: black;
+            text-decoration: none;
+            background-color: rgb(245, 169, 6);
+            border-radius: 10px;
+            padding: 10px;
+        }
+    }
+
+    .nav-item a:hover {
+        color: #0a0a0a;
+        transform: scale(1.3);
+        transition: 0.3s ease-in-out;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> ×</a>
+            <div class="navbar_icon">
+                <div class="box_nav">
+                    <img class="start" src="../images/screen-1.jpg" alt="College_icon" style="width: 90px;">
+                    <h1 class="webname_nav">CollegeDhundo</h1>
+                </div>
+            </div>
+            <a href="findcolleges.html">Home</a>
+            <a href="findcolleges.html">Find Colleges</a>
+
+        </div>
+        <div class="grid col-md-8">
+            <div class="box">
+                <button class="phone_menu" id="phone_menu_button" style="border: 0; background: transparent"
+                    onclick="openNav()">
+                    <img src="../menu-outline.jpg" width="90" height="50" alt="submit" />
+                </button>
+
+                <img class="start" src="../images/screen-1.jpg" alt="College_icon"
+                    style="width: 90px; padding-top: 2%;">
+                <h1 style="padding-top: 2%; padding-left: 1%;" class="webname">CollegeDhundo</h1>
+            </div>
+        </div>
+        <div class="navigation_bar col-md-4"></div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent ml-auto">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="findcolleges.html">Home</a>
+                    </li>
+                    <li class="nav-item active px-3">
+                        <a class="nav-link" href="findcolleges.html">Find Colleges <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row" id="row1">
+        <div style="padding-top: 5vh;padding-bottom:5vh" id="card_form" class="col-12 col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card_text" style="font-family: 'Baloo Bhai 2', cursive;">Search for the college that you
+                        desire</h4>
+                    <h6 class="card_subtext" style="font-family: 'Baloo Bhai 2', cursive;">Please Fill all the details
+                        and explore the colleges that fits you</h6>
+                    <form class="College_Search_Form">
+                        <div class="form-group">
+                            <label class="required" style="font-family: 'Baloo Bhai 2', cursive;">College Name</label>
+                            <select class="form-control" id="College_Name_Menu" required>
+                                <option style="font-family: 'Baloo Bhai 2', cursive;" value="" selected disabled>Select
+                                    College</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="required" style="font-family: 'Baloo Bhai 2', cursive;">CATEGORY</label>
+                            <select class="form-control" id="CATEGORY_Menu">
+                                <option style="font-family: 'Baloo Bhai 2', cursive;" value="" selected disabled>Select
+                                    your Category</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="required" style="font-family: 'Baloo Bhai 2', cursive;">Annual Family
+                                Income</label>
+                            <input placeholder="enter annual income" type="number" min="40000" class="form-control"
+                                id="Family_Income" required="true">
+                            <div class="requirements"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="required" style="font-family: 'Baloo Bhai 2', cursive;">12th Standard
+                                Percentage</label>
+                            <input placeholder="enter your marks" type="number" min="50" max="100" class="form-control"
+                                id="12th_Standard_Percentage" required="true">
+                            <div class="requirements"></div>
+                        </div>
+                        <div class="submit">
+                            <button type="button" id="College_submit" onclick="Filter_College_Data()" disabled
+                                class="btn" style="font-family: 'Baloo Bhai 2', cursive;">Find</button>
+                            <input onclick="myButton()" style="font-family: 'Baloo Bhai 2', cursive;" type="reset"
+                                value="Reset" class="btn" id="reset_data">
+                            <script>
+                                function myButton() {
+                                    location.reload();
+
+                                }
+                            </script>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-8 instructions_part" id="result_section">
+            <div class="instruction" id="instruction"
+                style="background-color:#00000083;border-radius: 9px; font-family: 'Baloo Bhai 2', cursive;">
+                <h1 style="text-align: center">And How does it work?</h1>
+                <ol style="display: inline-block;color:white ; font-weight: bolder;">
+                    <li class="">
+                        Firstly Fill all the required details correctly as asked in the form and click on the find
+                        button.
+                    </li>
+                    <li class="">
+                        Once the list of colleges shows up, click on the college that suits you to
+                        grab more necessary details on it.
+                    </li>
+                    <li class="">
+                        Under each college card, all the necessary details regarding the application and financial data
+                        are available on it.
+                    </li>
+                    <li class="">
+                        Click on star button to add them your wishlist for easier access laterly.
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <div class="Wishlist_Colleges">
+            <div class="container Wishlist_Content">
+                <h1 class="intro_text_2">Wishlist Your Choices</h1>
+                <p style="text-align:center;color:grey;font-weight:bold;padding-bottom: 1vh;">Find the best colleges
+                    that you
+                    desire and wishlist them.</p>
+                <div class="row">
+                    <div class="col-12 col-md-4 find_sections" style="text-align:center">
+                        <img src="../search.png" style="zoom:0.4" alt="College_Graduation">
+                        <p style="text-align:center;color:grey;font-weight:bold;padding-bottom: 1vh;">Find out the best
+                            colleges </p>
+                    </div>
+                    <div class="col-12 col-md-4 wishlist_sections" style="text-align:center">
+                        <img src="../wishlist.png" style="zoom:0.4" alt="College_Graduation">
+                        <p style="text-align:center;color:grey;font-weight:bold;padding-bottom: 1vh;">Wishlist the
+                            colleges
+                            of your preference.</p>
+                    </div>
+                    <div class="col-12 col-md-4 apply_sections" style="text-align:center">
+                        <img src="../apply.png" alt="College_Graduation">
+                        <p style="text-align:center;color:grey;font-weight:bold;padding-bottom: 1vh;">Apply for the
+                            colleges and
+                            to pursue your dreams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="About_Us_Colleges">
+            <div class="About_Us_Content">
+                <h1 class="intro_text_3" style="color: rgb(255, 255, 255); padding-top: 3%;">About Us</h1>
+                <p style="text-align:center;color:white;font-weight:bold;margin:0;padding-bottom: 5vh;">We are a
+                    community creating and looking for improvement of college application processses.<br> Do Visit Us to
+                    find the perfect college to persue your carrier.</p>
+            </div>
+        </div>
+        <hr>
+      
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto">
+                        <h6 class="text-uppercase fw-bold">
+                            <b style="font-size: 25px;"> College Dhundo </b>
+                        </h6>
+                        <p>
+                            College Shortlist Advice To Find Out the perfect college for you
+                        </p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <b style="font-size: 25px;"> Contact Us</b>
+                        </h6>
+                        <p>
+                            SuryanshSharma@gmail.com
+                        </p>
+                        <p>+91 99999999</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 Copyright :
+            <a class="text-reset_fw-bold" href="findcolleges.html">CollegeDhundo.com</a>
+        </div>
+    </footer>
+    <script>
+        var College_Name_Array = [];
+        for (var i = 0; i < College_Data.length; i++) {
+            var value = College_Data[i];
+            if (College_Name_Array.includes(value.College_Name)) {
+                continue;
+            } else {
+                var college_name = document.getElementById("College_Name_Menu")
+                college_name.innerHTML += "<option>" + value.College_Name + "</option>"
+                $(college_name).on('change', function () {
+                    college_name.classList.add("is-valid")
+                });
+                College_Name_Array.push(value.College_Name)
+            }
+        }
+        $("#College_Name_Menu").on('change', function () {
+            var value = $(this).val();
+            result = "<option>" + "SELECT " + "</option>";
+            var College_Name_CATEGORY = [];
+            for (var i = 0; i < College_Data.length; i++) {
+                if (College_Data[i].College_Name === (value) && !College_Name_CATEGORY.includes(College_Data[i]
+                        .CATEGORY)) {
+
+                    College_Name_CATEGORY.push(College_Data[i].CATEGORY);
+                    result += "<option>" + College_Data[i].CATEGORY + "</option>"
+
+                } else {
+                    continue;
+                }
+            }
+            var college_CATEGORY = document.getElementById("CATEGORY_Menu")
+            college_CATEGORY.classList.add("is-valid")
+            college_CATEGORY.innerHTML = result;
+        });
+
+        function validate() {
+            var formdata = document.getElementsByClassName("College_Search_Form")
+            var This_id = $(this);
+            if (formdata[0].checkValidity()) {
+                document.getElementById('College_submit').removeAttribute("disabled");
+            } else {
+                document.getElementById('College_submit').disabled = true
+            }
+            let value = (This_id[0].checkValidity()) ? "" : This_id[0].validationMessage;
+            let classname = (This_id[0].checkValidity()) ? "is-valid" : "is-invalid";
+            let removename = (!This_id[0].checkValidity()) ? "is-valid" : "is-invalid";
+            This_id.siblings("div")[0].innerHTML = value;
+            This_id[0].classList.remove(removename)
+            This_id[0].classList.add(classname);
+        }
+
+        function Filter_College_Data() {
+            var CollegeArray = [];
+            var name = document.getElementById("College_Name_Menu").value
+            var CATEGORY = document.getElementById("CATEGORY_Menu").value
+            var income = document.getElementById("Family_Income").value
+            var income_fees = 0.5 * document.getElementById("Family_Income").value
+            var percent = document.getElementById("12th_Standard_Percentage").value
+            console.log("Hi line no")
+            if (document.getElementById("output_display")) {
+                document.getElementById("output_display").remove();
+                console.log("new element")
+            }
+            var size = window.matchMedia("(max-width: 1500px)");
+            var college_card =
+                '<div id="output_display"><h3 style="font-family: Baloo Bhai 2, cursive; color: green; background-color: white;" class = "college_find_text">Congrats !! . . . these are the colleges available as per your requirements</h3>'
+            for (var i = 0; i < College_Data.length; i++) {
+                var value = College_Data[i];
+                console.log(value)
+                if (value.College_Name === name && value.CATEGORY === CATEGORY && income_fees <= income) {
+                    if (size.matches) {
+                        college_card +=
+                            '<div class="card" id="college_cards"><div class="card-header border-0"><img style = "max-width:100%;max-height:100%;" ></div><div class="card-block px-2"><h2 style = "font-weight:bold;" class="card_title">' +
+                            value.College_Name + '</h2><p style="zoom:1.4;" class="card-text">Course : ' + value
+                            .Course + '</p><p style="zoom:1.4;" class="card-text">Fees : ' + value.Annual_Fee +
+                            '</p><p style="zoom:1.4;" class="card-text">Scholarship Amount :' + value
+                            .Scholarship_Amount +
+                            '</p><div style="text-align:center;"><a href="#" style="margin:10px;" class="btn" id="College_submit">Wishlist</a><a href="#" style="margin:10px;" class="btn" id="College_submit">Apply</a></div></div><div style = "margin-left: auto; margin-right: 0;"><img class="information_icon" src="../information_icon.png" alt="information_icon"></div></div>';
+                    } else {
+                        college_card +=
+                            '<div class="card flex-row flex-wrap" id="college_cards"><div class="card-header border-0"><img style = "max-height:20vh;max-width:auto;></div><div class="card-block px-2"><h2 style = "font-weight:bold;" class="card_title">' +
+                            value.College_Name + '</h2><p style="zoom:1.4;" class="card-text">Course : ' + value
+                            .Course + '</p><p style="zoom:1.4;" class="card-text">Fees : ' + value.Annual_Fee +
+                            '</p><p style="zoom:1.4;" class="card-text">Scholarship Amount :' + value
+                            .Scholarship_Amount +
+                            '</p><div style="text-align:center;"><a href="#" style="margin:10px;" class="btn" id="College_submit">Wishlist</a><a href="#" style="margin:10px;" class="btn" id="College_submit">Apply</a></div></div><div style = "margin-left: auto; margin-right: 0;"><img class="information_icon" src="../information_icon.png" alt="information_icon"></div></div>';
+                    }
+                    CollegeArray.push(value)
+                    console.log(value)
+                }
+            }
+            console.log(CollegeArray)
+            if (CollegeArray.length == 0) {
+                var college_card =
+                    '<div id="output_display"><h3 class="college_find_text">SORRY!! There are no scholarships available for the courses of your choice </h3>'
+                for (var i = 0; i < College_Data.length; i++) {
+                    var value = College_Data[i];
+                    if (value.CATEGORY == CATEGORY && parseInt(value.Scholarship_Marks) <= percent) {
+                        if (size.matches) {
+                            college_card +=
+                                '<div class="card" id="college_cards"><div class="card-header border-0"><img style = "max-width:100%;max-height:100%;></div><div class="card-block px-2"><h2 style = "font-weight:bold;" class="card_title">' +
+                                value.College_Name + '</h2><p style="zoom:1.4;" class="card-text">Course : ' + value
+                                .Course + '</p><p style="zoom:1.4;" class="card-text">Fees : ' + value.Annual_Fee +
+                                '</p><p style="zoom:1.4;" class="card-text">Scholarship Amount : ' + value
+                                .Scholarship_Amount +
+                                '</p><div style="text-align:center;"><a href="#" style="margin:10px;" class="btn" id="College_submit">Wishlist</a><a href="#" style="margin:10px;" class="btn" id="College_submit">Apply</a></div></div><div style = "margin-left: auto; margin-right: 0;"><img class="information_icon" src="../information_icon.png" alt="information_icon"></div></div>';
+                        } else {
+                            college_card +=
+                                '<div class="card flex-row flex-wrap" id="college_cards"><div class="card-header border-0"><img style = "max-height:20vh;max-width:auto;></div><div class="card-block px-2"><h2 style = "font-weight:bold;" class="card_title">' +
+                                value.College_Name + '</h2><p style="zoom:1.4;" class="card-text">Course : ' + value
+                                .Course + '</p><p style="zoom:1.4;" class="card-text">Fees : ' + value.Annual_Fee +
+                                '</p><p style="zoom:1.4;" class="card-text">Scholarship Amount : ' + value
+                                .Scholarship_Amount +
+                                '</p><div style="text-align:center;"><a href="#" style="margin:10px;" class="btn" id="College_submit">Wishlist</a><a href="#" style="margin:10px;" class="btn" id="College_submit">Apply</a></div></div><div style = "margin-left: auto; margin-right: 0;"><img class="information_icon" src="../information_icon.png" alt="information_icon"></div></div>';
+                        }
+                        CollegeArray.push(value)
+                    }
+                }
+                console.log(CollegeArray)
+            }
+            if (CATEGORY === "SELECT") {
+                window.alert("Please Select valid Category")
+                var college_card =
+                    '<div id="output_display"><h3 class="college_find_text" style="color: white;border: 2px solid grey;width: 400px;height: 300px;padding: 25px;background-color: #00000083; height: 100px;align-items: center;" >Please Select Category !</h3>'            
+            }
+
+            college_card += '</div>'
+            document.getElementById("instruction").style.display = "none";
+            var result_section = document.getElementById("result_section");
+            result_section.classList.remove('instructions_part');
+            result_section.innerHTML += college_card
+        }
+        $(".form-control").keyup(validate);
+
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "70%";
+            document.getElementById("phone_menu_button").style.visibility = "hidden";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("phone_menu_button").style.visibility = "visible";
+        }
+
+
+        $(document).ready(function () {
+            var animation_elements = [$.find('.Wishlist_Content'), $.find('.About_Us_Content')];
+            var web_window = $(window);
+
+            function check_if_in_view() {
+                var window_height = web_window.height();
+                var window_top_position = web_window.scrollTop();
+                var window_bottom_position = (window_top_position + window_height);
+                $.each(animation_elements, function () {
+                    var element = $(this);
+                    var element_height = $(element).outerHeight();
+                    var element_top_position = $(element).offset().top;
+                    var element_bottom_position = (element_top_position + element_height);
+                    if ((element_bottom_position >= window_top_position) && (element_top_position *
+                            1.01 <= window_bottom_position)) {
+                        element.addClass('in-view');
+                    } else {
+                        element.removeClass('in-view');
+                    }
+                });
+
+            }
+            $(window).on('scroll resize', function () {
+                check_if_in_view()
+            })
+            $(window).trigger('scroll');
+
+        });
+    </script>
+</body>
+
+</html>

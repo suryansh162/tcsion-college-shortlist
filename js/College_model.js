@@ -233,6 +233,14 @@ const College_Data = [{
         "Annual_Fee": 110000
     },
     {
+        "College_Name": "Gargi College,NEW DELHI",
+        "Scholarship_Marks": 89,
+        "Scholarship_Amount": 15000,
+        "CATEGORY": "PWD",
+        "Course": "B.COM",
+        "Annual_Fee": 110000
+    },
+    {
         "College_Name": "HANSRAJ COLLEGE - [HRC], NEW DELHI",
         "Scholarship_Marks": 89,
         "Scholarship_Amount": 15000,
@@ -481,7 +489,7 @@ const College_Data = [{
         "Annual_Fee": 80000
     },
     {
-        "College_Name": "K J SOMAIYA COLLEGE OF ARTS &amp; COMMERCE - [KJSAC], MUMBAI",
+        "College_Name": "K J SOMAIYA COLLEGE OF ARTS and COMMERCE - [KJSAC], MUMBAI",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "GENERAL",
@@ -489,7 +497,7 @@ const College_Data = [{
         "Annual_Fee": 150000
     },
     {
-        "College_Name": "K J SOMAIYA COLLEGE OF ARTS &amp; COMMERCE - [KJSAC], MUMBAI",
+        "College_Name": "K J SOMAIYA COLLEGE OF ARTS and COMMERCE - [KJSAC], MUMBAI",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "OBC",
@@ -497,7 +505,7 @@ const College_Data = [{
         "Annual_Fee": 150000
     },
     {
-        "College_Name": "K J SOMAIYA COLLEGE OF ARTS &amp; COMMERCE - [KJSAC], MUMBAI",
+        "College_Name": "K J SOMAIYA COLLEGE OF ARTS and COMMERCE - [KJSAC], MUMBAI",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "SC",
@@ -505,10 +513,18 @@ const College_Data = [{
         "Annual_Fee": 150000
     },
     {
-        "College_Name": "K J SOMAIYA COLLEGE OF ARTS &amp; COMMERCE - [KJSAC], MUMBAI",
+        "College_Name": "K J SOMAIYA COLLEGE OF ARTS and COMMERCE - [KJSAC], MUMBAI",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "ST",
+        "Course": "B.COM",
+        "Annual_Fee": 150000
+    },
+    {
+        "College_Name": "K J SOMAIYA COLLEGE OF ARTS and COMMERCE - [KJSAC], MUMBAI",
+        "Scholarship_Marks": 91,
+        "Scholarship_Amount": 25000,
+        "CATEGORY": "PWD",
         "Course": "B.COM",
         "Annual_Fee": 150000
     },
@@ -2089,7 +2105,7 @@ const College_Data = [{
         "Annual_Fee": 100000
     },
     {
-        "College_Name": " Kalinga University",
+        "College_Name": "Kalinga University",
         "Scholarship_Marks": 89,
         "Scholarship_Amount": 15000,
         "CATEGORY": "GENERAL",
@@ -2097,7 +2113,7 @@ const College_Data = [{
         "Annual_Fee": 100000
     },
     {
-        "College_Name": " Kalinga University",
+        "College_Name": "Kalinga University",
         "Scholarship_Marks": 89,
         "Scholarship_Amount": 15000,
         "CATEGORY": "OBC",
@@ -2105,7 +2121,7 @@ const College_Data = [{
         "Annual_Fee": 100000
     },
     {
-        "College_Name": " Kalinga University",
+        "College_Name": "Kalinga University",
         "Scholarship_Marks": 89,
         "Scholarship_Amount": 15000,
         "CATEGORY": "SC",
@@ -2113,7 +2129,7 @@ const College_Data = [{
         "Annual_Fee": 100000
     },
     {
-        "College_Name": " Kalinga University",
+        "College_Name": "Kalinga University",
         "Scholarship_Marks": 89,
         "Scholarship_Amount": 15000,
         "CATEGORY": "ST",
@@ -2121,52 +2137,12 @@ const College_Data = [{
         "Annual_Fee": 100000
     },
     {
-        "College_Name": " Kalinga University",
+        "College_Name": "Kalinga University",
         "Scholarship_Marks": 89,
         "Scholarship_Amount": 15000,
         "CATEGORY": "PWD",
         "Course": "B.TECH",
         "Annual_Fee": 100000
-    },
-    {
-        "College_Name": "RV College of Engineering [RVCE]",
-        "Scholarship_Marks": 90,
-        "Scholarship_Amount": 20000,
-        "CATEGORY": "PWD",
-        "Course": "B.TECH",
-        "Annual_Fee": 75000
-    },
-    {
-        "College_Name": "RV College of Engineering [RVCE]",
-        "Scholarship_Marks": 90,
-        "Scholarship_Amount": 20000,
-        "CATEGORY": "GENERAL",
-        "Course": "B.TECH",
-        "Annual_Fee": 75000
-    },
-    {
-        "College_Name": "RV College of Engineering [RVCE]",
-        "Scholarship_Marks": 90,
-        "Scholarship_Amount": 20000,
-        "CATEGORY": "OBC",
-        "Course": "B.TECH",
-        "Annual_Fee": 75000
-    },
-    {
-        "College_Name": "RV College of Engineering [RVCE]",
-        "Scholarship_Marks": 90,
-        "Scholarship_Amount": 20000,
-        "CATEGORY": "SC",
-        "Course": "B.TECH",
-        "Annual_Fee": 75000
-    },
-    {
-        "College_Name": "RV College of Engineering [RVCE]",
-        "Scholarship_Marks": 90,
-        "Scholarship_Amount": 20000,
-        "CATEGORY": "ST",
-        "Course": "B.TECH",
-        "Annual_Fee": 75000
     },
     {
         "College_Name": "RV College of Engineering [RVCE]",
@@ -2249,6 +2225,46 @@ const College_Data = [{
         "Annual_Fee": 75000
     },
     {
+        "College_Name": "RV College of Engineering [RVCE]",
+        "Scholarship_Marks": 90,
+        "Scholarship_Amount": 20000,
+        "CATEGORY": "PWD",
+        "Course": "B.TECH",
+        "Annual_Fee": 75000
+    },
+    {
+        "College_Name": "RV College of Engineering [RVCE]",
+        "Scholarship_Marks": 90,
+        "Scholarship_Amount": 20000,
+        "CATEGORY": "GENERAL",
+        "Course": "B.TECH",
+        "Annual_Fee": 75000
+    },
+    {
+        "College_Name": "RV College of Engineering [RVCE]",
+        "Scholarship_Marks": 90,
+        "Scholarship_Amount": 20000,
+        "CATEGORY": "OBC",
+        "Course": "B.TECH",
+        "Annual_Fee": 75000
+    },
+    {
+        "College_Name": "RV College of Engineering [RVCE]",
+        "Scholarship_Marks": 90,
+        "Scholarship_Amount": 20000,
+        "CATEGORY": "SC",
+        "Course": "B.TECH",
+        "Annual_Fee": 75000
+    },
+    {
+        "College_Name": "RV College of Engineering [RVCE]",
+        "Scholarship_Marks": 90,
+        "Scholarship_Amount": 20000,
+        "CATEGORY": "ST",
+        "Course": "B.TECH",
+        "Annual_Fee": 75000
+    },
+    {
         "College_Name": "Bangalore Institute of Technology [BIT]",
         "Scholarship_Marks": 90,
         "Scholarship_Amount": 20000,
@@ -2298,6 +2314,14 @@ const College_Data = [{
     },
     {
         "College_Name": "Bangalore Institute of Technology [BIT]",
+        "Scholarship_Marks": 90,
+        "Scholarship_Amount": 20000,
+        "CATEGORY": "GENERAL",
+        "Course": "B.TECH",
+        "Annual_Fee": 80000
+    },
+    {
+        "College_Name": "BMS College of Engineering [BMSCE]",
         "Scholarship_Marks": 90,
         "Scholarship_Amount": 20000,
         "CATEGORY": "GENERAL",
@@ -2601,7 +2625,7 @@ const College_Data = [{
         "Annual_Fee": 87000
     },
     {
-        "College_Name": "SRM Institute of Science &amp; Technology, SRM University",
+        "College_Name": "SRM Institute of Science and Technology, SRM University",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "SC",
@@ -2609,7 +2633,7 @@ const College_Data = [{
         "Annual_Fee": 76000
     },
     {
-        "College_Name": "SRM Institute of Science &amp; Technology, SRM University",
+        "College_Name": "SRM Institute of Science and Technology, SRM University",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "ST",
@@ -2617,7 +2641,7 @@ const College_Data = [{
         "Annual_Fee": 76000
     },
     {
-        "College_Name": "SRM Institute of Science &amp; Technology, SRM University",
+        "College_Name": "SRM Institute of Science and Technology, SRM University",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "PWD",
@@ -2625,7 +2649,7 @@ const College_Data = [{
         "Annual_Fee": 76000
     },
     {
-        "College_Name": "SRM Institute of Science &amp; Technology, SRM University",
+        "College_Name": "SRM Institute of Science and Technology, SRM University",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "GENERAL",
@@ -2633,7 +2657,7 @@ const College_Data = [{
         "Annual_Fee": 76000
     },
     {
-        "College_Name": "SRM Institute of Science &amp; Technology, SRM University",
+        "College_Name": "SRM Institute of Science and Technology, SRM University",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "OBC",
@@ -2641,7 +2665,7 @@ const College_Data = [{
         "Annual_Fee": 76000
     },
     {
-        "College_Name": "SRM Institute of Science &amp; Technology, SRM University",
+        "College_Name": "SRM Institute of Science and Technology, SRM University",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "SC",
@@ -2649,7 +2673,7 @@ const College_Data = [{
         "Annual_Fee": 76000
     },
     {
-        "College_Name": "SRM Institute of Science &amp; Technology, SRM University",
+        "College_Name": "SRM Institute of Science and Technology, SRM University",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "ST",
@@ -2657,7 +2681,7 @@ const College_Data = [{
         "Annual_Fee": 76000
     },
     {
-        "College_Name": "SRM Institute of Science &amp; Technology, SRM University",
+        "College_Name": "SRM Institute of Science and Technology, SRM University",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "PWD",
@@ -2665,7 +2689,7 @@ const College_Data = [{
         "Annual_Fee": 76000
     },
     {
-        "College_Name": "SRM Institute of Science &amp; Technology, SRM University",
+        "College_Name": "SRM Institute of Science and Technology, SRM University",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "GENERAL",
@@ -2673,7 +2697,7 @@ const College_Data = [{
         "Annual_Fee": 76000
     },
     {
-        "College_Name": "SRM Institute of Science &amp; Technology, SRM University",
+        "College_Name": "SRM Institute of Science and Technology, SRM University",
         "Scholarship_Marks": 91,
         "Scholarship_Amount": 25000,
         "CATEGORY": "OBC",
@@ -3837,14 +3861,6 @@ const College_Data = [{
         "College_Name": "Christ University, Bangalore",
         "Scholarship_Marks": 92,
         "Scholarship_Amount": 25000,
-        "CATEGORY": "PWD",
-        "Course": "BBA",
-        "Annual_Fee": 71000
-    },
-    {
-        "College_Name": "Christ University, Bangalore",
-        "Scholarship_Marks": 92,
-        "Scholarship_Amount": 25000,
         "CATEGORY": "GENERAL",
         "Course": "BBA",
         "Annual_Fee": 71000
@@ -3890,149 +3906,3 @@ const College_Data = [{
         "Annual_Fee": 71000
     }
 ];
-// [
-//     {
-//         "College_Name" : "KCG",
-//         "Annual_Fee" : "10000",
-//         "Caste" : "GEN",
-//         "Course" : "BSC",
-//         "Scholarship_Amount" : "50000",
-//         "Scholarship_Marks" : "85"
-//     },
-//     {
-//         "College_Name" : "KCG",
-//         "Annual_Fee" : "8000",
-//         "Caste" : "SC",
-//         "Course" : "BSC",
-//         "Scholarship_Amount" : "60000",
-//         "Scholarship_Marks" : "75"
-//     },
-//     {
-//         "College_Name" : "KCG",
-//         "Annual_Fee" : "7000",
-//         "Caste" : "ST",
-//         "Course" : "BSC",
-//         "Scholarship_Amount" : "60000",
-//         "Scholarship_Marks" : "70"
-//     },
-//     {
-//         "College_Name" : "KCG",
-//         "Annual_Fee" : "20000",
-//         "Caste" : "GEN",
-//         "Course" : "BTECH",
-//         "Scholarship_Amount" : "60000",
-//         "Scholarship_Marks" : "90"
-//     },
-//     {
-//         "College_Name" : "KCG",
-//         "Annual_Fee" : "15000",
-//         "Caste" : "SC",
-//         "Course" : "BTECH",
-//         "Scholarship_Amount" : "40000",
-//         "Scholarship_Marks" : "75"
-//     },
-//     {
-//         "College_Name" : "KCG",
-//         "Annual_Fee" : "10000",
-//         "Caste" : "ST",
-//         "Course" : "BTECH",
-//         "Scholarship_Amount" : "40000",
-//         "Scholarship_Marks" : "70"
-//     },
-//     {
-//         "College_Name" : "GCELT",
-//         "Annual_Fee" : "30000",
-//         "Caste" : "GEN",
-//         "Course" : "BSC",
-//         "Scholarship_Amount" : "30000",
-//         "Scholarship_Marks" : "80"
-//     },
-//     {
-//         "College_Name" : "GCELT",
-//         "Annual_Fee" : "25000",
-//         "Caste" : "SC",
-//         "Course" : "BSC",
-//         "Scholarship_Amount" : "40000",
-//         "Scholarship_Marks" : "60"
-//     },
-//     {
-//         "College_Name" : "GCELT",
-//         "Annual_Fee" : "20000",
-//         "Caste" : "ST",
-//         "Course" : "BSC",
-//         "Scholarship_Amount" : "30000",
-//         "Scholarship_Marks" : "50"
-//     },
-//     {
-//         "College_Name" : "GCELT",
-//         "Annual_Fee" : "80000",
-//         "Caste" : "GEN",
-//         "Course" : "BTECH",
-//         "Scholarship_Amount" : "90000",
-//         "Scholarship_Marks" : "90"
-//     },
-//     {
-//         "College_Name" : "GCELT",
-//         "Annual_Fee" : "50000",
-//         "Caste" : "SC",
-//         "Course" : "BTECH",
-//         "Scholarship_Amount" : "95000",
-//         "Scholarship_Marks" : "70"
-//     },
-//     {
-//         "College_Name" : "GCELT",
-//         "Annual_Fee" : "40000",
-//         "Caste" : "ST",
-//         "Course" : "BTECH",
-//         "Scholarship_Amount" : "95000",
-//         "Scholarship_Marks" : "60"
-//     },
-//     {
-//         "College_Name" : "SPIT",
-//         "Annual_Fee" : "140000",
-//         "Caste" : "GEN",
-//         "Course" : "BSC",
-//         "Scholarship_Amount" : "70000",
-//         "Scholarship_Marks" : "90"
-//     },
-//     {
-//         "College_Name" : "SPIT",
-//         "Annual_Fee" : "120000",
-//         "Caste" : "SC",
-//         "Course" : "BSC",
-//         "Scholarship_Amount" : "90000",
-//         "Scholarship_Marks" : "80"
-//     },
-//     {
-//         "College_Name" : "SPIT",
-//         "Annual_Fee" : "120000",
-//         "Caste" : "ST",
-//         "Course" : "BSC",
-//         "Scholarship_Amount" : "80000",
-//         "Scholarship_Marks" : "70"
-//     },
-//     {
-//         "College_Name" : "SPIT",
-//         "Annual_Fee" : "160000",
-//         "Caste" : "GEN",
-//         "Course" : "BTECH",
-//         "Scholarship_Amount" : "90000",
-//         "Scholarship_Marks" : "95"
-//     },
-//     {
-//         "College_Name" : "SPIT",
-//         "Annual_Fee" : "120000",
-//         "Caste" : "SC",
-//         "Course" : "BTECH",
-//         "Scholarship_Amount" : "95000",
-//         "Scholarship_Marks" : "80"
-//     },
-//     {
-//         "College_Name" : "SPIT",
-//         "Annual_Fee" : "120000",
-//         "Caste" : "ST",
-//         "Course" : "BTECH",
-//         "Scholarship_Amount" : "100000",
-//         "Scholarship_Marks" : "80"
-//     },
-// ]
